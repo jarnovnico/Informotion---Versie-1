@@ -1,0 +1,13 @@
+{
+  "name": "test-gulp-2.0",
+  "version": "0.0.0",
+  "authors": [
+    "jarno"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "compass-breakpoint": "~2.6.1",
+    "normalize-scss": "~3.0.3",
+    "susy": "~2.2.5"
+  }
+}
