@@ -23,4 +23,4 @@ Run `gulp watch` to start webserver, watch files and livereload.
 - Connect server
 - Livereload
 
-- Jaimie and Jarno
+By Jaimie and Jarno
