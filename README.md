@@ -1,4 +1,4 @@
-# First Gulpfile
+# Informotion - Prototype 1 - Versie 1
 
 ### Requirments:
 
@@ -22,6 +22,3 @@ Run `gulp watch` to start webserver, watch files and livereload.
     - [Breakpoint](http://breakpoint-sass.com/)
 - Connect server
 - Livereload
-
-
-Thanks to the guys at [Super Interactive](https://github.com/superinteractive) for helping me!
