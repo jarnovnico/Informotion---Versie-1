@@ -22,3 +22,5 @@ Run `gulp watch` to start webserver, watch files and livereload.
     - [Breakpoint](http://breakpoint-sass.com/)
 - Connect server
 - Livereload
+
+- Jaimie and Jarno
