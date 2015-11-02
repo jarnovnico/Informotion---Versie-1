@@ -8,9 +8,10 @@ $break-desktop: 1200px;
 $break-desktop-large: 1400px;
 
 .container {
-  @include container(1200px);
 
-  @include breakpoint($break-desktop-large) {
-    @include container(1400px);
-  }
+	@include container(1200px);
+
+	@include breakpoint($break-desktop-large) {
+		@include container(1400px);
+	}
 }

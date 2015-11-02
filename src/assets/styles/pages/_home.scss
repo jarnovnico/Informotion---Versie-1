@@ -1,0 +1,40 @@
+.home {
+
+	&__homeWrapper {
+		background-color: #fff;
+		height: 100%;
+		width: 100%;
+		padding: 64px 0 64px 0;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__sectionWrapper {
+		width: 500px;
+	}
+
+	&__mainTitle {
+		text-transform: uppercase;
+		margin: 0;
+		padding: 0 0 32px 0;
+	}
+	&__mainImg {
+		width: 500px;
+
+		&:hover {
+			opacity: 0.7;
+			cursor: pointer; 
+  			cursor: hand;
+		}
+	}
+
+	&__graphContainer {
+		display: none;
+		width: 100%;
+	}
+
+	&__svgGraph {
+		width: 100%;
+	}
+}

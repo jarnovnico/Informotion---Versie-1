@@ -5,4 +5,12 @@ block vars
 
 block content
 	.container
-		h1 Hello World!
+		.home__homeWrapper
+			.home__sectionWrapper
+				h1.home__mainTitle Stadsdeel
+				img#amsterdam.home__mainImg(src='assets/images/placeholder.jpg', alt='image')
+
+			.home__sectionWrapper
+				section#another-element.home__graphContainer
+					p.home__graphTitle Gemiddelde prijzen AirBnB Kamer
+					svg#grafiek.home__svgGraph

@@ -1,0 +1,17 @@
+.footer {
+
+	&__footWrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__credits {
+		list-style: none;
+		padding: 0;
+	}
+
+	&__name {
+		display: inline-block;
+	}
+}

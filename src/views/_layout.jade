@@ -3,18 +3,34 @@ html(lang="en")
 	block vars
 	head
 		block title
-			title #{pageTitle} - My Static Site
+			title #{pageTitle} - Website
 		link(rel='stylesheet', href='/styles/style.min.css')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+		script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js')
+		script(src='http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js')
+		script(src='//d3js.org/d3.v3.min.js', charset='utf-8')
 	body(class='#{bodyClass}')
 
-		header.site-header
+		header.siteHeader
 			.container
 				block header
+					ul.header__navigation
+						li.header__navItem Home
+						li.header__navItem Help
+					.header__titleWrap
+						h3.header__headerTitle Datavisualisatie - Afval Amsterdam Centrum
 
 		block content
 		
-		.site-footer
+		.siteFooter
 			.container
 				block footer
+					.footer__footWrapper
+						ul.footer__credits
+							li.footer__name Copyright 2015 &copy; - 
+							li.footer__name Herbert,  
+							li.footer__name Kasper,  
+							li.footer__name Jaimie &amp; 
+							li.footer__name Jarno
 		script(src='/scripts/main.min.js')

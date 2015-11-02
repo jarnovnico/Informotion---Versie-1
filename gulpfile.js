@@ -117,7 +117,7 @@ gulp.task('scripts', function() {
     .pipe(concat('main.js'))
 
     // Add a .min version
-    .pipe(rename({ suffix: '.min.js' }))
+    .pipe(rename({ suffix: '.min' }))
 
     // Minify with jsUglify
     .pipe(uglify())
@@ -155,7 +155,7 @@ gulp.task('images', function() {
     .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
     
     // Distribute to build
-    .pipe(gulp.dest('build/images'))
+    .pipe(gulp.dest('build/assets/images'))
 
     // Show notifcation
     .pipe(notify({ message: 'Images task complete' }))
