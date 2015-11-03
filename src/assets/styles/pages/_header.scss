@@ -16,6 +16,11 @@
 		margin: 12px 0 12px 12px;
 		width: 50px;
 		text-align: center;
+		text-decoration: none;
+
+		&:visited {
+			color: black;
+		}
 
 		&:hover {
 			color: #fff;

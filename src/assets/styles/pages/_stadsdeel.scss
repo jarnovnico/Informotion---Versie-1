@@ -1,5 +1,6 @@
-.home {
-	&__centrumWrapper {
+.stadsdeel {
+
+	&__wrapper {
 		background-color: #fff;
 		height: 100%;
 		width: 100%;
@@ -9,10 +10,17 @@
 		align-items: center;
 	}
 
-	&__block {
-		width: 100px;
-		height: 100px;
-		overflow: hidden;
+	&__sectionWrapper {
+		width: 500px;
+	}
+
+	&__mainTitle {
+		text-transform: uppercase;
+		margin: 0;
+		padding: 0 0 32px 0;
+	}
+	&__mainImg {
+		width: 500px;
 
 		&:hover {
 			opacity: 0.7;
@@ -21,7 +29,12 @@
 		}
 	}
 
-	&__placeImg {
+	&__graphContainer {
+		display: none;
+		width: 100%;
+	}
+
+	&__svgGraph {
 		width: 100%;
 	}
 }

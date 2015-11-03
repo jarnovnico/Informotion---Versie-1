@@ -16,12 +16,14 @@ html(lang="en")
 			.container
 				block header
 					ul.header__navigation
-						li.header__navItem Home
-						li.header__navItem Help
+						a.header__navItem(href='index.html') Home
 					.header__titleWrap
-						h3.header__headerTitle Datavisualisatie - Afval Amsterdam Centrum
+						h3#display_id_div.header__headerTitle Hover over stadsdeel
+						//- h3.header__headerTitle Datavisualisatie - Afval Amsterdam Centrum
 
-		block content
+		block centrum
+
+		block stadsdeel
 		
 		.siteFooter
 			.container
