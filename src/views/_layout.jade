@@ -10,6 +10,10 @@ html(lang="en")
 		script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js')
 		script(src='http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js')
 		script(src='//d3js.org/d3.v3.min.js', charset='utf-8')
+		script(src="/scripts/playcanvas-stable.min.js")
+		script(type='text/javascript').
+			SCENE_PATH = "391630.json";
+
 	body(class='#{bodyClass}')
 
 		header.siteHeader
@@ -35,4 +39,6 @@ html(lang="en")
 							li.footer__name Kasper,  
 							li.footer__name Jaimie &amp; 
 							li.footer__name Jarno
-		script(src='/scripts/main.min.js')
+		
+		script(src='/scripts/__start__.js')
+		script(src='/scripts/__loading__.js')

@@ -114,24 +114,82 @@ gulp.task('scripts', function() {
     .pipe(plumber({errorHandler: onError}))
 
     // Concatinate in one file
-    .pipe(concat('main.js'))
+    //.pipe(concat('main.js'))
 
     // Add a .min version
-    .pipe(rename({ suffix: '.min' }))
+    //.pipe(rename({ suffix: '.min' }))
 
     // Minify with jsUglify
-    .pipe(uglify())
+    //.pipe(uglify())
 
     // Distribute to build
     .pipe(gulp.dest('build/scripts'))
 
     // Show notifcation
-    .pipe(notify({ message: 'Scripts task complete' }))
+    .pipe(notify({ message: 'json task complete' }))
+
+    // Livereload
+    .pipe(connect.reload());
+
+
+});
+gulp.task('scripts2', function() {
+  return gulp.src('src/assets/scripts/playcanvas/*.js')
+
+    // Catch errors
+    .pipe(plumber({errorHandler: onError}))
+
+    // Concatinate in one file
+    //.pipe(concat('main.js'))
+
+    // Add a .min version
+    //.pipe(rename({ suffix: '.min' }))
+
+    // Minify with jsUglify
+    //.pipe(uglify())
+
+    // Distribute to build
+    .pipe(gulp.dest('build'))
+
+    // Show notifcation
+    // .pipe(notify({ message: 'json task complete' }))
+
+    // Livereload
+    .pipe(connect.reload());
+
+
+});
+gulp.task('files', function() {
+  return gulp.src('src/assets/files/**/*.json')
+
+    // Catch errors
+    .pipe(plumber({errorHandler: onError}))
+
+    // Distribute to build
+    .pipe(gulp.dest('build/files'))
+
+    // Show notifcation
+    // .pipe(notify({ message: 'files task complete' }))
 
     // Livereload
     .pipe(connect.reload());
 });
 
+gulp.task('json', function() {
+  return gulp.src('src/assets/scripts/json/*.json')
+
+    // Catch errors
+    .pipe(plumber({errorHandler: onError}))
+
+    // Distribute to build
+    .pipe(gulp.dest('build/'))
+
+    // Show notifcation
+    // .pipe(notify({ message: 'Scripts task complete' }))
+
+    // Livereload
+    .pipe(connect.reload());
+});
 // Lint scripts
 gulp.task('lint', function() {
   return gulp.src('src/assets/scripts/*.js')
@@ -171,7 +229,7 @@ gulp.task('clean', function(cb) {
 
 // Default task
 gulp.task('default', ['clean', 'bower'], function() {
-    gulp.start('styles', 'scripts', 'lint', 'templates', 'images');
+    gulp.start('styles', 'scripts', 'templates', 'images','json','files','scripts2');
 });
 
 // Set global watch var to true
