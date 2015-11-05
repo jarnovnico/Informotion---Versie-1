@@ -90,7 +90,7 @@ var graphs = {
 		var partColor=["#003E03","#006522","#008F06","#28CF2F","#2AFF00","#32FF5C","#8AD871"]
 
 		var width = 400;
-		var height = 350;
+		var height = 370;
 
 		var widthScale = d3.scale.linear()
 		  .domain([0, 10])
