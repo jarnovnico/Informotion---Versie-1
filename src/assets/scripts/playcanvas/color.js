@@ -19,6 +19,8 @@ pc.script.create('color', function (app) {
             this.redMaterial3 = app.assets.find("citycolor3").resource;
             this.redMaterial4 = app.assets.find("citycolor4").resource;
             this.redMaterial5 = app.assets.find("citycolor5").resource;
+            this.redMaterial6 = app.assets.find("citycolor6").resource;
+            this.redMaterial7 = app.assets.find("citycolor7").resource;
             
             // not yet working
             function setColorToMesh (material) {
@@ -73,7 +75,7 @@ pc.script.create('color', function (app) {
             else if(this.entity.name==globals.cityParts[5].name) {
                 for (i = 0; i < this.entity.model.model.meshInstances.length; i++) {
                     if(this.entity.model.model.meshInstances[i].node.name.length>10) {
-                         this.entity.model.model.meshInstances[i+1].material = this.redMaterial2;
+                         this.entity.model.model.meshInstances[i+1].material = this.redMaterial6;
                     }
                 }                
                 
@@ -81,7 +83,7 @@ pc.script.create('color', function (app) {
             else if(this.entity.name==globals.cityParts[6].name) {
                 for (i = 0; i < this.entity.model.model.meshInstances.length; i++) {
                     if(this.entity.model.model.meshInstances[i].node.name.length>10) {
-                         this.entity.model.model.meshInstances[i+1].material = this.redMaterial4;
+                         this.entity.model.model.meshInstances[i+1].material = this.redMaterial7;
                     }
                 }               
                
@@ -89,7 +91,7 @@ pc.script.create('color', function (app) {
             else if(this.entity.name==globals.cityParts[7].name) {
                 for (i = 0; i < this.entity.model.model.meshInstances.length; i++) {
                     if(this.entity.model.model.meshInstances[i].node.name.length>10) {
-                         this.entity.model.model.meshInstances[i+1].material = this.redMaterial3;
+                         this.entity.model.model.meshInstances[i+1].material = this.redMaterial1;
                     }
                 }                
                 
@@ -104,7 +106,7 @@ pc.script.create('color', function (app) {
             else if(this.entity.name==globals.cityParts[9].name) {
                 for (i = 0; i < this.entity.model.model.meshInstances.length; i++) {
                     if(this.entity.model.model.meshInstances[i].node.name.length>10) {
-                         this.entity.model.model.meshInstances[i+1].material = this.redMaterial1;
+                         this.entity.model.model.meshInstances[i+1].material = this.redMaterial3;
                     }
                 }               
                 
