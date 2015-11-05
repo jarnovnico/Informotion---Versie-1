@@ -31,6 +31,27 @@ html(lang="en")
 							input#checkboxvuil.header__fromItem(type='checkbox', name='toggle', value='Vuil')
 							label.header__fromLabel Geld
 							input#checkboxgeld.header__fromItem(type='checkbox', name='toggle', value='Geld')
+						button#tooltipButton.header__tooltipButton Hide legenda
+						#tooltipWindow.header__tooltipBox
+							.header__tooltipImgWrapper
+								h3.header__tooltipTitle AirBnB prijzen:
+								.header__hotelImgWrapper
+									.header__imgtextwrap
+										img.header__tooltipImg(src='/assets/images/hotel1.png')
+										p.header__tooltipText Prijs: &euro; 50
+									.header__imgtextwrap
+										img.header__tooltipImg(src='/assets/images/hotel2.png')
+										p.header__tooltipText Prijs: &euro; 1500
+								h3.header__tooltipTitle Waarderingscijfer schoon:
+								.header__vuilImgWrapper
+									.header__imgtextwrap
+										img.header__tooltipImg(src='/assets/images/vuilnisbak1.png')
+										p.header__tooltipText Cijfer: 10
+									.header__imgtextwrap
+										img#vuilnisbakveel.header__tooltipImg(src='/assets/images/vuilnisbak2.png')
+										p.header__tooltipText Cijfer: 1
+								h3.header__tooltipTitle Uitleg datavisualisatie
+								p.header__tooltipparagraph Deze website vergelijkt de AirBnB prijzen in Amsterdam Centrum met hoe vuil of hoe schoon het daar is. Dit om inzicht te krijgen in de verhoudingen hier tussen.
 
 		block stadsdeel
 		

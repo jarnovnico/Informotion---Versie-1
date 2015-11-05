@@ -1,3 +1,22 @@
+$( "#tooltipButton" ).click(function() {
+	if($('#tooltipWindow:visible').length) {
+	  $('#tooltipWindow').hide();
+	} else {
+	  $('#tooltipWindow').show();
+	}
+});
+
+$('#tooltipButton').click(function(){
+
+	if ($.trim($(this).text()) === 'Hide legenda') {
+	  $(this).text('Show legenda');
+	} else {
+	  $(this).text('Hide legenda');        
+	}
+
+	return false; 
+});
+
 document.getElementById('checkboxvuil').onclick = function() {
     if ( this.checked ) {
         console.log('ja vuil');
