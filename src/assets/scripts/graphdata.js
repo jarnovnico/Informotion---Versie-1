@@ -1,6 +1,6 @@
 var graphData = {
 	hotelData : {
-		"weteringschans" : [
+		"weteringenschans" : [
 		    {
 		      "prijs":85,
 		      "soortprijs":"goedkoopste"

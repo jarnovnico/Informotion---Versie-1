@@ -38,12 +38,9 @@ pc.script.create('detailview', function (app) {
         dropCityPart:function(citypart){
             var clickedEntity=this.entity;
             var i=0;
-            var arrowScale={x:0.01,y:0.01,z:0.01};
-            TweenLite.to(arrowScale,1,{
-                x:1,y:1,z:0.1,
-                onUpdate:function() {             
-                            globals.backArrow.setLocalScale(arrowScale.x,arrowScale.y,arrowScale.z);               
-                }
+            TweenLite.to('#terugknop',1,{
+                left:0,
+                opacity:1
             });
             function dropCityCallback() {
                 i++;
