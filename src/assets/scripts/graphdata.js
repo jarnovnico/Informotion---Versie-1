@@ -15,18 +15,19 @@ var graphData = {
 		    }
 		  ],
 		"westerlijke-eilanden" : [
-		    {
-		      "prijs":59,
+				    {
+		      "prijs":55,
 		      "soortprijs":"goedkoopste"
 		    },
 		    {
-		      "prijs":209.22,
+		      "prijs":139,
 		      "soortprijs":"gemiddelde"
 		    },
 		    {
-		      "prijs":650,
+		      "prijs":350,
 		      "soortprijs":"duurste"
 		    }
+
 		  ],
 		"jordaan" : [
 		    {
@@ -43,16 +44,16 @@ var graphData = {
 		    }
 		  ],
 		"grachtengordel-west" : [
-		   {
-		      "prijs":65,
+					    {
+		      "prijs":50,
 		      "soortprijs":"goedkoopste"
 		    },
 		    {
-		      "prijs":250.49,
+		      "prijs":170,
 		      "soortprijs":"gemiddelde"
 		    },
 		    {
-		      "prijs":1250,
+		      "prijs":500,
 		      "soortprijs":"duurste"
 		    }
 		  ],
@@ -86,15 +87,15 @@ var graphData = {
 		  ],
 		"burgwallen-nieuwe-zijde" : [
 		    {
-		      "prijs":55,
+		      "prijs":59,
 		      "soortprijs":"goedkoopste"
 		    },
 		    {
-		      "prijs":139,
+		      "prijs":209.22,
 		      "soortprijs":"gemiddelde"
 		    },
 		    {
-		      "prijs":350,
+		      "prijs":650,
 		      "soortprijs":"duurste"
 		    }
 		  ],
@@ -127,18 +128,19 @@ var graphData = {
 		    }
 		  ],
 		  "burgwallen-oost-zijde" : [
-		    {
-		      "prijs":50,
+		  		   {
+		      "prijs":65,
 		      "soortprijs":"goedkoopste"
 		    },
 		    {
-		      "prijs":170,
+		      "prijs":250.49,
 		      "soortprijs":"gemiddelde"
 		    },
 		    {
-		      "prijs":500,
+		      "prijs":1250,
 		      "soortprijs":"duurste"
 		    }
+
 		  ]
 	},
 	schoonheidsgraden: [
