@@ -96,8 +96,10 @@ pc.script.create('picker', function (app) {
                         if(typeof entity.script.detailview != "undefined"){
                             if (globals.deactivateDetailView===true) {
                                 var index = entity.model.model.meshInstances.indexOf(selected[0])-1;
+
                                 console.log(entity.model.model.meshInstances[index].node.name);
-                            } else {                          
+                            } else {
+                                graphs.clickEvent(entity);                          
                                 globals.deactivateHover=true;
                                 entity.script.detailview.detailview(entity);
                                 globals.deactivateDetailView=true;

@@ -100,7 +100,7 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('build/styles'))
 
     // Show notification
-    .pipe(notify({ message: 'Styles task complete' }))
+    //.pipe(notify({ message: 'Styles task complete' }))
 
     // Livereload
     .pipe(connect.reload());
@@ -126,7 +126,7 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('build/scripts'))
 
     // Show notifcation
-    .pipe(notify({ message: 'json task complete' }))
+    //.pipe(notify({ message: 'json task complete' }))
 
     // Livereload
     .pipe(connect.reload());
@@ -245,6 +245,8 @@ gulp.task('watch', ['setWatch', 'templates', 'connect'], function() {
 
   // Watch .js files
   gulp.watch('src/assets/scripts/**/*.js', ['scripts']);
+
+  gulp.watch('src/assets/scripts/playcanvas/*.js', ['scripts2']);
 
   // Watch .jade files
   gulp.watch('src/**/*.jade', ['templates']);

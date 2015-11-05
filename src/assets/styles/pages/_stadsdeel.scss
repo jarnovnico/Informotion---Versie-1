@@ -1,6 +1,6 @@
 .stadsdeel {
 
-	&__wrapper {
+	/*&__wrapper {
 		background-color: #fff;
 		height: 100%;
 		width: 100%;
@@ -36,27 +36,38 @@
 
 	&__svgGraph {
 		width: 100%;
+	}*/
+	&__wrapper {
+		height: 100%;
+	    display: block;
+	    background-color: white;
+	    width: 30%;
+	    position: absolute;
+	    right: -1220px;
+	    top: 64px;
 	}
-
+	svg {
+		padding: 20px;
+	}
 }
 html {
-    height: 100%;
-    background-color: #1d292c;
+    /*height: 100%;*/
+    /*background-color: #1d292c;*/
 }
 body {
-    margin: 0;
+    /*margin: 0;
     max-height: 100%;
     height: 100%;
     overflow: hidden;
     background-color: #1d292c;
     font-family: Helvetica, arial, sans-serif;
     position: relative;
-    width: 100%;
+    width: 100%;*/
 }
 
 #application-canvas {
     display: block;
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     left: 0;
     right: 0;
@@ -71,8 +82,8 @@ body {
     margin: 0;
 }
 #application-canvas.fill-mode-FILL_WINDOW {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     margin: 0;
 }
 

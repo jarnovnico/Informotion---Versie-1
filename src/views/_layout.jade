@@ -11,6 +11,7 @@ html(lang="en")
 		script(src='http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js')
 		script(src='//d3js.org/d3.v3.min.js', charset='utf-8')
 		script(src="/scripts/playcanvas-stable.min.js")
+		script(src="/scripts/graphdata.js")
 		script(type='text/javascript').
 			SCENE_PATH = "391630.json";
 
@@ -18,16 +19,18 @@ html(lang="en")
 
 		header.siteHeader
 			.container
+				script(src='/scripts/__start__.js')
+				script(src='/scripts/__loading__.js')
 				block header
 					ul.header__navigation
 						a.header__navItem(href='index.html') Home
 					.header__titleWrap
 						h3#display_id_div.header__headerTitle Hover over stadsdeel
 						//- h3.header__headerTitle Datavisualisatie - Afval Amsterdam Centrum
-
-		block centrum
-
 		block stadsdeel
+			.container
+	
+
 		
 		.siteFooter
 			.container
@@ -39,6 +42,5 @@ html(lang="en")
 							li.footer__name Kasper,  
 							li.footer__name Jaimie &amp; 
 							li.footer__name Jarno
+		script(src='/scripts/citypartgraphs.js')
 		
-		script(src='/scripts/__start__.js')
-		script(src='/scripts/__loading__.js')

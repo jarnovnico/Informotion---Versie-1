@@ -12,6 +12,7 @@ pc.script.create('returnFromDetail', function (app) {
             for (var i =  globals.cityParts.length - 1; i >= 0; i--) {
                 if(globals.cityParts[i].getEulerAngles().data[0]>0){
                     this.returnFromDrop(globals.cityParts[i],i);
+                    graphs.removeGraph();
                 }
             }
             
