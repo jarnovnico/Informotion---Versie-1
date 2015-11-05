@@ -145,9 +145,9 @@ var graphData = {
 	},
 	schoonheidsgraden: [
 		{
-			citypart:"weteringschans",
+			citypart:"weteringenschans",
 			subparts:[
-				{	
+				{
 					part:"wde_weteringenschans_deel_1",
 					grade:6.5
 				},
