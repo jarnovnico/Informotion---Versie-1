@@ -82,7 +82,7 @@ pc.script.create('addprops', function (app) {
             }
             //grachtengordel-west
             else if(this.entity._parent.name==globals.cityParts[7].name) {
-                this.entity.setLocalPosition(-1.7,3.6,-1);
+                this.entity.setLocalPosition(-1.7,3.6,0.737);
                 selectProp(dataMoney[7], this.entity);
             }
             //burgwallen-oost-zijde

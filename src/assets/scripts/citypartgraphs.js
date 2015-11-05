@@ -8,7 +8,7 @@ var graphs = {
 		var tlgrafiek = new TimelineMax();
 
 	  	tlgrafiek.to('.stadsdeel__wrapper', 1, {
-	    	right: 0,
+	    	right: 60,
 	    	ease: Power1.easeInOut
 	  	});
 	},
@@ -45,11 +45,11 @@ var graphs = {
 		var height = 250;
 
 		var widthScale = d3.scale.linear()
-		  .domain([0, 450])
+		  .domain([0, 100 + d3.max(dataArray, function(d){return d.prijs})])
 		  .range([0, width]);
 
 		var color = d3.scale.linear()
-		  .domain([ 0, 450])
+		  .domain([ 0, 100 + d3.max(dataArray, function(d){return d.prijs})])
 		  .range(['lime', 'tomato']);
 
 		var axis = d3.svg.axis()

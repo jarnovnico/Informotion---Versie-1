@@ -38,9 +38,6 @@ pc.script.createLoadingScreen(function (app) {
 
     var createCss = function () {
         var css = [
-            'body {',
-            '    background-color: #283538;',
-            '}',
             '#application-splash {',
             '    position: absolute;',
             '    top: calc(50% - 28px);',
