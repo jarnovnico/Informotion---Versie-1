@@ -406,4 +406,4 @@ var graphData = {
 			]
 		}
 	] 
-}		
+};

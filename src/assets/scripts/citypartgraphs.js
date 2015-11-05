@@ -82,7 +82,7 @@ var graphs = {
 
 	},
 	createGraph2: function (entity) {
-		for (var i = 0; i < graphData.schoonheidsgraden.length-1; i++) {
+		for (var i = 0; i < graphData.schoonheidsgraden.length; i++) {
 			if(graphData.schoonheidsgraden[i].citypart==entity.name) {
 				var dataArray = graphData.schoonheidsgraden[i];
 			}
