@@ -90,7 +90,7 @@ var graphs = {
 		var partColor=["#003E03","#006522","#008F06","#28CF2F","#2AFF00","#32FF5C","#8AD871"]
 
 		var width = 400;
-		var height = 250;
+		var height = 350;
 
 		var widthScale = d3.scale.linear()
 		  .domain([0, 10])
@@ -101,15 +101,17 @@ var graphs = {
 		  .range(['lime', 'tomato']);
 
 		var axis = d3.svg.axis()
+
 		  // .ticks(5)
 		  .scale(widthScale);
+		  
 
 		var canvas2 = d3.select('.graph2').append("svg")
 		  .attr('width', width)
 		  .attr('height', height)
 		  .append('g')
 		  .attr('transform', 'translate(5, 0)');
-		var t = 0;
+		var t = -1;
 		var bars = canvas2.selectAll('rect')
 		  .data(dataArray.subparts)
 		  .enter()
@@ -129,7 +131,7 @@ var graphs = {
 		    .attr('transform', 'translate(6, 30)'); // margins bij de datums zodat ze netjes in midden van balk staan.
 
 		canvas2.append('g')
-		  .attr('transform', 'translate(0, 160)')
+		  .attr('transform', 'translate(0, -25)')
 		  .call(axis);
 
 		  var tlgrafiek = new TimelineMax();
@@ -147,7 +149,7 @@ var graphs = {
 		this.showSideBar();
 
 		var width = 400;
-		var height = 250;
+		var height = 210;
 
 		var widthScale = d3.scale.linear()
 		  .domain([0, 100 + d3.max(dataArray, function(d){return d.prijs})])
