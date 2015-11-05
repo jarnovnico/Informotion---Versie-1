@@ -23,10 +23,14 @@ html(lang="en")
 				script(src='/scripts/__start__.js')
 				script(src='/scripts/__loading__.js')
 				block header
-					ul.header__navigation
-						a.header__navItem(href='index.html') Home
 					.header__titleWrap
-						h3#display_id_div.header__headerTitle Hover over stadsdeel
+						//- h3#display_id_div.header__headerTitle Hover over stadsdeel
+						h2.header__headerTitle Vergelijking tussen Vuil en Hotelprijzen in Amsterdam Centrum
+						form.header__from(action='')
+							label.header__fromLabel Vuil
+							input#checkboxvuil.header__fromItem(type='checkbox', name='toggle', value='Vuil')
+							label.header__fromLabel Geld
+							input#checkboxgeld.header__fromItem(type='checkbox', name='toggle', value='Geld')
 
 		block stadsdeel
 		

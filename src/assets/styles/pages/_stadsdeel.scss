@@ -9,7 +9,7 @@
 	    display: block;
 	    position: absolute;
 	    right: -1220px;
-	    top: 84px;
+	    top: 112px;
 	}
 	svg {
 		padding: 20px;
@@ -45,7 +45,5 @@ canvas:focus {
     width: 8%;
     top: 64px;
     margin: 1em;
-    -webkit-box-shadow: -4px 6px 21px 0px rgba(0,0,0,0.75);
--moz-box-shadow: -4px 6px 21px 0px rgba(0,0,0,0.75);
-box-shadow: -4px 6px 21px 0px rgba(0,0,0,0.75);
+	box-shadow: -4px 6px 21px 0px rgba(0,0,0,0.75);
 }

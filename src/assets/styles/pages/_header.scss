@@ -1,45 +1,20 @@
 .header {
 
-	&__navigation {
-		list-style: none;
-		padding: 0;
-		float: left;
-		margin: 0;
-	}
-
-	&__navItem {
-		display: inline-block;
-		border: 3px solid black;
-		font-weight: bold;
-		border-radius: 3px;
-		padding: 8px 16px 8px 16px;
-		margin: 12px 0 12px 12px;
-		width: 50px;
-		text-align: center;
-		text-decoration: none;
-
-		&:visited {
-			color: black;
-		}
-
-		&:hover {
-			color: #fff;
-			background-color: #000;
-			cursor: pointer; 
-  			cursor: hand;
-		}
-	}
-
 	&__titleWrap {
-		height: 64px;
-		padding: 0 0 0 12px;
+		height: auto;
 		display: flex;
 		align-items: center;
-		justify-content: left;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin: 12px 0 12px 0;
 	}
 
 	&__headerTitle {
-		float: left;
-		margin: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	&__form {
+		width: 100%;
 	}
 }

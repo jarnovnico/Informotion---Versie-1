@@ -1,3 +1,18 @@
+document.getElementById('checkboxvuil').onclick = function() {
+    if ( this.checked ) {
+        console.log('ja vuil');
+    } else {
+        console.log('nee vuil');
+    }
+};
+
+document.getElementById('checkboxgeld').onclick = function() {
+    if ( this.checked ) {
+        console.log('ja geld');
+    } else {
+        console.log('nee geld');
+    }
+};
 
 var graphs = {
 	clickEvent: function (entity) {	
