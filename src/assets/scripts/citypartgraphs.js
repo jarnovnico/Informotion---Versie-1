@@ -14,6 +14,10 @@ document.getElementById('checkboxgeld').onclick = function() {
     }
 };
 
+$("#terugknop").click(function(event) {
+	returnFromDetail.returnFromDetail();
+});
+
 var graphs = {
 	clickEvent: function (entity) {	
 		this.createGraph(entity)
@@ -50,6 +54,7 @@ var graphs = {
 		
 
 	},
+
 
 	// Grafiek
 	createGraph: function (entity) {

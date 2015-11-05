@@ -7,6 +7,7 @@ pc.script.create('returnFromDetail', function (app) {
     ReturnFromDetail.prototype = {
         // Called once after all resources are loaded and before the first update
         initialize: function () {
+            window.returnFromDetail=this;
         },
         returnFromDetail: function(){
             for (var i =  globals.cityParts.length - 1; i >= 0; i--) {
@@ -22,12 +23,9 @@ pc.script.create('returnFromDetail', function (app) {
             var indexFirstPart = indexfirstpart;
             var i=-1;
             var excludePart = firstcitypart;
-            var arrowScale={x:1,y:1,z:0.1};
-            TweenLite.to(arrowScale,1,{
-                x:0.01,y:0.01,z:0.01,
-                onUpdate:function() {             
-                            globals.backArrow.setLocalScale(arrowScale.x,arrowScale.y,arrowScale.z);               
-                }
+            TweenLite.to("#terugknop",1,{
+                left:-555,
+                opacity:0
             });
             function dropCityCallback() {
                 i++;
