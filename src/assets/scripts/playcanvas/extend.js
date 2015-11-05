@@ -26,7 +26,7 @@ pc.script.create('extend', function (app) {
         },
         
         extend:function(){
-             this.factor = 1;
+             this.factor = 0.3;
 
 //             if(prevEntity) {
 //                 prevEntity.setLocalPosition(0, 0, 0);
@@ -40,7 +40,7 @@ pc.script.create('extend', function (app) {
              if (this.factor > 0) {
                
                 this.factor -= dt;
-                var z =  0.1*(1-this.factor);
+                var z =  0.2*(1-this.factor);
                  this.entity.setLocalPosition(0, z, 0);
                for (var i =  globals.cityParts.length - 1; i >= 0; i--) {
                    //not when selected and not when rotated or dropped for detailview

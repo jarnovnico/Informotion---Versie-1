@@ -130,9 +130,8 @@ gulp.task('scripts', function() {
 
     // Livereload
     .pipe(connect.reload());
-
-
 });
+
 gulp.task('scripts2', function() {
   return gulp.src('src/assets/scripts/playcanvas/*.js')
 
@@ -156,9 +155,8 @@ gulp.task('scripts2', function() {
 
     // Livereload
     .pipe(connect.reload());
-
-
 });
+
 gulp.task('files', function() {
   return gulp.src('src/assets/files/**/*.json')
 
@@ -190,6 +188,7 @@ gulp.task('json', function() {
     // Livereload
     .pipe(connect.reload());
 });
+
 // Lint scripts
 gulp.task('lint', function() {
   return gulp.src('src/assets/scripts/*.js')
