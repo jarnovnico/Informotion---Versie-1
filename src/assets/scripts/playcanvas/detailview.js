@@ -39,7 +39,7 @@ pc.script.create('detailview', function (app) {
             var clickedEntity=this.entity;
             var i=0;
             TweenLite.to('#terugknop',1,{
-                left:0,
+                left:270,
                 opacity:1
             });
             function dropCityCallback() {
